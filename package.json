@@ -1,0 +1,22 @@
+{
+  "name": "@nguyen-tri-nhan/test-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/create_app.js",
+  "bin": {
+    "test-boilerplate": "bin/create_app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyen-tri-nhan/boiler-plate-downloader.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

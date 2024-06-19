@@ -1,6 +1,6 @@
 {
   "name": "@nguyen-tri-nhan/test-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bin/create_app.js",
   "bin": {

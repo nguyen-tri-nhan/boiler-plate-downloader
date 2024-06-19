@@ -6,7 +6,7 @@ const fs = require('fs');
 if (process.argv.length < 3) {
   console.log('You have to provide a name to your app.');
   console.log('For example :');
-  console.log('    npx react-vite-ts-boilerplate my-app');
+  console.log('    npx @nguyen-tri-nhan/test-boilerplate my-app');
   process.exit(1);
 }
 
@@ -31,14 +31,13 @@ if (projectName !== '.') {
 
 async function main() {
   try {
+    console.log(`This project template is created by Nguyen Tri Nhan`);
+    console.log(`You can find him at: https://github.com/nguyen-tri-nhan`);
     console.log('Downloading files...');
     execSync(`git clone --depth 1 ${GIT_REPO} ${projectPath}`);
     if (projectName !== '.') {
       process.chdir(projectPath);
     }
-
-    console.log('Installing dependencies...');
-    execSync('yarn install');
 
     console.log('Removing useless files');
     execSync('npx rimraf ./.git');
@@ -46,6 +45,7 @@ async function main() {
     execSync('npx rimraf ./.github/workflows');
 
     console.log('The installation is done, this is ready to use !');
+    console.log('Happy coding !');
   } catch (error) {
     console.log(error);
   }
